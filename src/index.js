@@ -6,6 +6,7 @@ const fabricanteRoutes = require('./routes/fabricantes')
 const componenteRoutes = require('./routes/componentes')
 const seed = require('./seeds/seed')
 
+
 app.use(express.json())
 
 app.use(cors())

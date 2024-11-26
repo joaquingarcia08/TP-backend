@@ -5,6 +5,8 @@ const productoRoutes = require('./routes/productos')
 const fabricanteRoutes = require('./routes/fabricantes')
 const componenteRoutes = require('./routes/componentes')
 const seed = require('./seeds/seed')
+const path = require('path');
+app.use('/images', express.static(path.join(__dirname, 'images')));
 
 
 app.use(express.json())
